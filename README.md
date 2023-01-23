@@ -1,1 +1,1 @@
-# resume
+This is for the Cloud Resume Challenge, found here: https://cloudresumechallenge.dev/docs/the-challenge/aws/
