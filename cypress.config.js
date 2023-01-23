@@ -6,6 +6,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "https://pplknkln88.execute-api.ca-central-1.amazonaws.com"
+    baseUrl: "https://z9jtsttg5d.execute-api.ca-central-1.amazonaws.com/counter"
   },
 });
