@@ -32,5 +32,5 @@ ITEM
 
 
 # "visitcount": {"N": "0"}
-# Used initially but wipes value on subsequent updates.
+# Used to initialize value (under "id"). Subsequently wipes value.
 # Commented out to avoid further issues.
