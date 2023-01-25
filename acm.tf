@@ -4,9 +4,8 @@ resource "aws_acm_certificate" "ssl_certificate" {
   domain_name               = var.domain_name
   subject_alternative_names = ["www.${var.domain_name}"]
 
-  # Must go to domain registrar and enter the AWS NameServer values it 
-  # assigns, in to the domain custom DNS fields
-  # Once saved after a few seconds maybe a minute, the step will succeed and continue.
+  # Must go to route53 and enter the NameServer values it assigns in to
+  # the domain custom DNS fields, after some time process will proceed.
 
   validation_method = "DNS"
 
@@ -15,7 +14,6 @@ resource "aws_acm_certificate" "ssl_certificate" {
   }
 }
 
-# Uncomment the validation_record_fqdns line if you do DNS validation instead of Email.
 resource "aws_acm_certificate_validation" "cert" {
   provider                = aws.acm_provider
   certificate_arn         = aws_acm_certificate.ssl_certificate.arn

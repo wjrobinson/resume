@@ -32,8 +32,5 @@ ITEM
 
 
 # "visitcount": {"N": "0"}
-# Had to remove the visitcount field 
-# it was used to create the table initially, but, 
-# when run subsequently it would overwrite the counter value 
-# even though it would not destroy the table and recreate.
-# Removed this as a temp workaround for now
+# Used initially but wipes value on subsequent updates.
+# Commented out to avoid further issues.
